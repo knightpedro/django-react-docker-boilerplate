@@ -21,6 +21,7 @@ services:
     tty: true
     volumes:
       - ./frontend:/usr/src/app/frontend
+      - /usr/src/app/frontend/node_modules
     ports:
       - "3000:3000"
     environment:
